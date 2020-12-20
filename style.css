@@ -90,7 +90,7 @@ p { color: var(--color6);}
 }
 
 .even, .odd  {
-	min-height	: 100px;
+	min-height	: 225px;
 	text-align	: left;
 	background-color: var(--color3);
 	border-radius	: var(--bradius);
@@ -104,6 +104,7 @@ p { color: var(--color6);}
 
 .even img  {
 	padding-top	: 5em;
+	padding-bottom	: 5em;
 	float		: right;
 	max-width	: 400px;
 	max-height	: 225px;
