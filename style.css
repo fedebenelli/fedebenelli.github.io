@@ -1,4 +1,4 @@
-:root {
+:root {/*
 	--color0	: #191919;
 	--color1	: #8A7AFF;
 	--color2	: #E672E0;
@@ -7,6 +7,16 @@
 	--color5	: #FFDF8F;
 	--color6	: #FFFFAD;
 	--color7	: #20FA7B;
+	--color8	: #67ff83;*/
+	
+	--color0	: #1E0520;
+	--color1	: #1E0530;
+	--color2	: #010101;
+	--color3	: #090909;
+	--color4	: #010B8B;
+	--color5	: #010B9C;
+	--color6	: #999999;
+	--color7	: #67ff83;
 	--color8	: #67ff83;
 
 	--bradius	: 15px;
@@ -97,6 +107,7 @@ p { color: var(--color6);}
 	float		: right;
 	max-width	: 400px;
 	max-height	: 225px;
+	padding		: 20px;
 }
 
 .odd img {
