@@ -9,8 +9,8 @@
 	--color7	: #20FA7B;
 	--color8	: #67ff83;*/
 	
-	--color0	: #1E0520;
-	--color1	: #1E0530;
+	--color0	: #180426;
+	--color1	: #18041A;
 	--color2	: #010101;
 	--color3	: #090909;
 	--color4	: #010B8B;
@@ -90,7 +90,7 @@ p { color: var(--color6);}
 }
 
 .even, .odd  {
-	min-height	: 225px;
+	/*min-height	: 225px;*/
 	text-align	: left;
 	background-color: var(--color3);
 	border-radius	: var(--bradius);
