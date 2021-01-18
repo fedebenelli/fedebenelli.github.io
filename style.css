@@ -1,14 +1,4 @@
-:root {/*
-	--color0	: #191919;
-	--color1	: #8A7AFF;
-	--color2	: #E672E0;
-	--color3	: #FF7BBA;
-	--color4	: #FF9799;
-	--color5	: #FFDF8F;
-	--color6	: #FFFFAD;
-	--color7	: #20FA7B;
-	--color8	: #67ff83;*/
-	
+:root {
 	--color0	: #180426;
 	--color1	: #18041A;
 	--color2	: #010101;
@@ -22,9 +12,8 @@
 	--bradius	: 15px;
 	--contentpad	: 25px;
 	--textpad	: 50px;
-	--bodywidth	: 75%;
+	--bodywidth	: 1000px;
 }
-
 
 body { 
 	background	: var(--color1);
@@ -81,17 +70,11 @@ p { color: var(--color6);}
 	background-color: var(--color0);
 }
 
-.pic {
-	min-width	: 300px;
-	max-width	: 50%;
-	display		: block;
-	margin-left	: auto;
-	margin-right	: auto;
-}
-
 .even, .odd  {
 	/*min-height	: 225px;*/
-	text-align	: left;
+	display		: block;
+	width		: auto;
+	height		: auto;
 	background-color: var(--color3);
 	border-radius	: var(--bradius);
 	padding-left	: var(--textpad); 
@@ -101,21 +84,42 @@ p { color: var(--color6);}
 	margin-bottom	: var(--textpad);
 }
 
-
-.even img  {
-	padding-top	: 5em;
-	padding-bottom	: 5em;
-	float		: right;
-	max-width	: 400px;
-	max-height	: 225px;
-	padding		: 20px;
+.pic {
+	min-width	: 300px;
+	max-width	: 15%;
+	margin-left	: auto;
+	margin-right	: auto;
+	text-align	: right;
+	float		: left;
 }
 
-.odd img {
-	padding-top	: 5em;
-	padding-bottom	: 5em;
+.img2  {
+	padding		: 0.25rem;
+	border-radius	: 0.25rem;
+	width		: 30%;
+	height		: 50%;
 	float		: left;
+}
+
+.par{
+/*	padding-top	: 5em;
+	padding-bottom	: 5em;
 	max-width	: 400px;
 	max-height	: 225px;
-	padding		: 20px;
+	padding		: 5em;
+	font-size	: auto;
+	line-height	: 25px;
+	float		: left;*/
+}
+
+.even {
+	text-align	: left;
+}
+
+.odd {
+	text-align	: left;
+}
+
+table, td {
+	padding-right: 1em;
 }
