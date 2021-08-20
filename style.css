@@ -81,13 +81,12 @@ p { color: var(--color6);}
 	padding-top	: 1em;
 	padding-bottom	: var(--textpad); 
 	margin-bottom	: var(--textpad);
-	position  	: relative;
 }
 
 .pic {
 	display 	: block;
 	min-width	: 200px;
-	max-height	: 300px;
+	max-height	: 225px;
 	max-width	: 50%;
 	margin-left	: auto;
 	margin-right	: auto;
@@ -98,35 +97,13 @@ p { color: var(--color6);}
 	padding-top 	: 2em;
 }
 
-.pic2 {
-	min-width	: 200px;
-	max-height	: 300px;
-	max-width	: 50%;
-	margin-left	: auto;
-	margin-right	: auto;
-	text-align	: right;
-	/*float		: left;*/
-	position 	: absolute;
-	top 		: 50%;
-	-ms-transform 	: translateY(-50%);
-	transform 	: translateY(-50%);
-}
-
 .par{
+	text-align 	: center;
 	min-width 	: 10em;
 	max-width	: 500px;
 	font-size	: auto;
 }
 
-.even {
-	text-align	: left;
-	float: 		: right
-}
-
-.odd {
-	text-align	: left;
-	float: 		: right
-}
 
 table, td {
 	padding-right: 0em;
