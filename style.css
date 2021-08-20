@@ -102,6 +102,7 @@ p { color: var(--color6);}
 	text-align	: justify;
 	min-width 	: 10em;
 	font-size	: auto;
+	hyphens		: auto;
 }
 
 
