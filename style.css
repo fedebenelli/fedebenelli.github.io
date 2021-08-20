@@ -71,7 +71,6 @@ p { color: var(--color6);}
 }
 
 .even, .odd  {
-	min-height	: 225px;
 	display		: block;
 	width		: auto;
 	height		: auto;
@@ -91,8 +90,6 @@ p { color: var(--color6);}
 	max-width	: 50%;
 	margin-left	: auto;
 	margin-right	: auto;
-	align 		: center;
-	text-align	: center;
 	float		: left;
 	padding 	: 0.5em;
 	padding-top 	: 2em;
