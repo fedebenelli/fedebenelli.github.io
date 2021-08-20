@@ -99,7 +99,7 @@ p { color: var(--color6);}
 }
 
 .par{
-	text-align 	: center;
+	text-align	: justify;
 	min-width 	: 10em;
 	max-width	: 500px;
 	font-size	: auto;
