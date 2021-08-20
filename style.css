@@ -39,6 +39,7 @@ h1 {
 	color		: var(--color7);
 }
 h2, h3, h4 { text-align: center; }
+
 p { color: var(--color6);}
 
 .topnav {
