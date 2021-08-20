@@ -71,7 +71,7 @@ p { color: var(--color6);}
 }
 
 .even, .odd  {
-	/*min-height	: 225px;*/
+	min-height	: 225px;
 	display		: block;
 	width		: auto;
 	height		: auto;
@@ -85,7 +85,8 @@ p { color: var(--color6);}
 }
 
 .pic {
-	min-width	: 300px;
+	min-width	: 200px;
+	max-height	: 225px;
 	max-width	: 15%;
 	margin-left	: auto;
 	margin-right	: auto;
@@ -102,14 +103,14 @@ p { color: var(--color6);}
 }
 
 .par{
-/*	padding-top	: 5em;
-	padding-bottom	: 5em;
-	max-width	: 400px;
-	max-height	: 225px;
+	padding-top	: 2em;
+	padding-bottom	: 2em;
+	max-width	: 500px;
+	max-height	: 300px;
 	padding		: 5em;
 	font-size	: auto;
 	line-height	: 25px;
-	float		: left;*/
+	float		: left;
 }
 
 .even {
@@ -117,7 +118,7 @@ p { color: var(--color6);}
 }
 
 .odd {
-	text-align	: left;
+	text-align	: right;
 }
 
 table, td {
