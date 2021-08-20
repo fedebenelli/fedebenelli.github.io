@@ -96,6 +96,7 @@ p { color: var(--color6);}
 	float		: left;
 	padding 	: 0.5em;
 	padding-top 	: 2em;
+	border-radius	: var(--bradius);
 }
 
 .par{
