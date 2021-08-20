@@ -38,8 +38,7 @@ h1 {
 	padding-top	: 30px;
 	color		: var(--color7);
 }
-h2 { text-align: center; }
-h3 { text-align: center; }
+h2, h3, h4 { text-align: center; }
 p { color: var(--color6);}
 
 .topnav {
@@ -82,45 +81,53 @@ p { color: var(--color6);}
 	padding-top	: 1em;
 	padding-bottom	: var(--textpad); 
 	margin-bottom	: var(--textpad);
+	position  	: relative;
 }
 
 .pic {
+	display 	: block;
 	min-width	: 200px;
-	max-height	: 225px;
-	max-width	: 15%;
+	max-height	: 300px;
+	max-width	: 50%;
+	margin-left	: auto;
+	margin-right	: auto;
+	align 		: center;
+	text-align	: center;
+	float		: left;
+	padding 	: 0.5em;
+	padding-top 	: 2em;
+}
+
+.pic2 {
+	min-width	: 200px;
+	max-height	: 300px;
+	max-width	: 50%;
 	margin-left	: auto;
 	margin-right	: auto;
 	text-align	: right;
-	float		: left;
-}
-
-.img2  {
-	padding		: 0.25rem;
-	border-radius	: 0.25rem;
-	width		: 30%;
-	height		: 50%;
-	float		: left;
+	/*float		: left;*/
+	position 	: absolute;
+	top 		: 50%;
+	-ms-transform 	: translateY(-50%);
+	transform 	: translateY(-50%);
 }
 
 .par{
-	padding-top	: 2em;
-	padding-bottom	: 2em;
+	min-width 	: 10em;
 	max-width	: 500px;
-	max-height	: 300px;
-	padding		: 5em;
 	font-size	: auto;
-	line-height	: 25px;
-	float		: left;
 }
 
 .even {
 	text-align	: left;
+	float: 		: right
 }
 
 .odd {
-	text-align	: right;
+	text-align	: left;
+	float: 		: right
 }
 
 table, td {
-	padding-right: 1em;
+	padding-right: 0em;
 }
