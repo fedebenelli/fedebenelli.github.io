@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<title> Federico Benelli: Research </title>
+	<meta name="author" content="Federico Benelli">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+
+	<body>
+
+		<div class="topnav">
+		  <a class="active" href="../index.html">Home</a>
+		  <a href="../research/rsrch.html">Research</a>
+		  <a href="ttrls.html">Tutorials</a>
+		  <a href="scripts.html">Scripts</a>
+		  <a href="#contact">Contact</a>
+		</div>
+
+	<h1>Scripts</h1>
+    Here I include a set of scripts that are either for my own use or to share
+    with anyone interested.
+
+	<div class="content">
+
+	<div class="odd">
+	<h2>Setup WSL for Fortran development</h2>
+
+    <p>
+    Most of the people I work with are Windows user so, to slowly migrate into
+    a more standard programming enviroment, I've recommended them to using WSL
+    and Visual Studio Code.
+    </p>
+
+	<p>
+    <h3>WSL Installation</h3>
+    <p>
+    Simply open a command line as administrator and run:
+    </p>
+    <code>
+        wsl --install
+    </code>
+
+    <p>
+    The installation will need the PC to reboot, after that Ubuntu will be
+    installed on your PC.
+    </p>
+
+    <h3>Programming enviroment setup</h3>
+    <p>
+    For this I've setted up a bootsrap script that firstly will Update and
+    upgrade the Linux Machine
+
+    <ul>
+        <li>Python package manager</li>
+        <li>GNU Fortran compiler</li>
+        <li>BLAS and LAPACK libraries (for linear algebra operations)</li>
+        <li>GNU debugger</li>
+        <li>Fortran Package Manager</li>
+    </ul>
+    </p>
+
+    <p>
+    To run the script simply do:
+    </p>
+
+    <code>
+        curl fedebenelli.github.io/scripts/wsl_bootstrap | sh
+    </code>
+
+	</div>
+
+	</div>
+	</body>
+</html>

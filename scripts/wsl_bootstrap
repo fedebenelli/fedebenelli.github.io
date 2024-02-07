@@ -1,0 +1,36 @@
+#!/bin/bash
+
+setup_oneapi() {
+    wget -O- https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB \
+    |   gpg --dearmor | sudo tee /usr/share/keyrings/oneapi-archive-keyring.gpg > /dev/null
+
+    echo "deb [signed-by=/usr/share/keyrings/oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main" \
+    | sudo tee /etc/apt/sources.list.d/oneAPI.list
+}
+
+install_packages() {
+    # Setup oneapi servers
+    setup_oneapi
+
+    # Update apt repositories
+    sudo apt update && sudo apt upgrade
+
+    # Install:
+    #   - Python package manager
+    #   - GNU Fortran compiler
+    #   - BLAS and LAPACK libraries (for linear algebra operations)
+    #   - Gnu debugger
+    sudo apt install \
+        python3-pip python3-venv pipx \
+        gfortran \
+        libblas-dev liblapack-dev \
+        gdb
+
+    # Install fortran language server, fprettify and flinter
+    packages=( fortls findent flinter fpm )
+    for package in ${packages[@]}; do
+        pipx install $package
+    done
+}
+
+install_packages
